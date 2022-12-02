@@ -6,7 +6,9 @@ const mongoose = require("mongoose");
 
 
 
-mongoose.connect('mongodb://localhost:27017/firstnodejsproject',
+// mongoose.connect('mongodb://localhost:27017/firstnodejsproject',
+//nodejs 18 update 
+mongoose.connect('mongodb://127.0.0.1:27017/firstnodejsproject',
   {
     useNewUrlParser: true,
     // useFindAndModify: false,
@@ -19,5 +21,7 @@ mongoose.connect('mongodb://localhost:27017/firstnodejsproject',
 
 module.exports = {
     User: require('../management/model/model'),
-    Client: require('../management/model/client')
+    Student: require('../management/model/studentModel'),
+    Emp: require('../management/model/empModel'),
+   
 };
