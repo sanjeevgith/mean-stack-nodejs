@@ -23,5 +23,6 @@ module.exports = {
     User: require('../management/model/model'),
     Student: require('../management/model/studentModel'),
     Emp: require('../management/model/empModel'),
+    MultiData: require('../management/model/multiarrayModel'),
    
 };

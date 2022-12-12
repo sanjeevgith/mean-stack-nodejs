@@ -13,7 +13,7 @@ router.post("/add_emp", (request, response) => {
     empnew.address.city = request.body.city
     empnew.save()
         .then(r => {
-            response.json({ type: 'success', msg: 'user created', data: empnew })
+            response.json({ type: 'success', msg: 'user created'})
         })
         .catch(err => { console.log(err) })
 });
@@ -52,7 +52,7 @@ router.delete("/delete_emp/:_id", (request, response) => {
 router.patch("/update_emp/:_id", (request, response) => {
     Emp.findByIdAndUpdate(request.params._id)
         .then(r => {
-            console.log(r)
+            // console.log(r)
             r.name = request.body.name,
                 r.address.addr = request.body.addr,
                 r.address.city = request.body.city,
