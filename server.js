@@ -16,6 +16,10 @@ db.once("open", function () {
   console.log("Connected successfully");
 });
 
+//Tf9o9y6qowCCNGdd
+
+//mongodb+srv://sanjeev:<Tf9o9y6qowCCNGdd>@cluster0.0dpacjq.mongodb.net/test
+
 //connection localhost4200
 app.use(cors({credentials: true, origin: 'http://localhost:4200'}));
 
